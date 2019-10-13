@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+header {
+    background: linear-gradient(to top, #3f2121, #210000);
+
+
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    position: fixed;
+    display: flex;
+}
+
+nav ul {
+
+    margin-left: 70px;
+
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    padding-left: 1em;
+    padding-right: 1em;
+
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+}
+
+
+nav ul a {
+    font-size: 1.8em;
+    color: #ff0f0f;
+
+    font-family: "Noto Sans JP";
+    font-weight: 700;
+
+    text-decoration: none;
+
+    display: block;
+}
+
+nav ul a:hover {
+    color: #fcfcff;
+    text-decoration: underline;
+}
+
+nav ul a:focus {
+    color: #d0d0ff;
+}
+
+
+main {
+    background: #ffffff;
+
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 100px;
+    padding: 3% 3%;
+
+
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #030e2f;
+}
+
+main a {
+    font-size: 1.5em;
+    line-height: 1.6;
+    text-indent: 1em;
+
+    text-align: justify;
+
+    font-family: "Sawarabi Gothic";
+    font-weight: 500;
+
+    display: block;
+
+    color: #210000;
+}
+
+main a:hover {
+    font-size: 1.4em;
+    color: #d0d0ff;
+}
+
+main p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    text-indent: 1em;
+
+    text-align: justify;
+
+    font-family: "Sawarabi Gothic";
+
+}
+
+main h1 {
+    margin-left: 8px;
+    border-left: solid 5px #210000;
+    padding-left: 8px;
+}
+
+main h2 {
+    margin-left: 8px;
+    border-left: solid 2px #0f0f0f;
+    padding-left: 8px;
+}
+
+main h3 {
+    margin-left: 8px;
+    border-left: solid 1px #210000;
+    padding-left: 8px;
+}
+
+.marquee {
+    width: 300px;
+    padding-left: 300px;
+    white-space: nowrap;
+
+    animation-name: marquee;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translate(0%);
+    }
+
+    100%,
+    to {
+        transform: translate(-100%);
+    }
+}
+
+#title {
+    font-family: "Noto Sans JP";
+    font-size: 1.4em;
+    font-weight: 700;
+    border-bottom: solid 3px #b10000;
+    margin-bottom: 2em;
+}
